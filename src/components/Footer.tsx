@@ -24,22 +24,22 @@ function Footer() {
           </h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className={`hover:${theme.link} transition`}>
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
                 Product
               </a>
             </li>
             <li>
-              <a href="#" className={`hover:${theme.link} transition`}>
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
                 Features
               </a>
             </li>
             <li>
-              <a href="#" className={`hover:${theme.link} transition`}>
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
                 Marketplace
               </a>
             </li>
             <li>
-              <a href="#" className={`hover:${theme.link} transition`}>
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
                 Company
               </a>
             </li>
