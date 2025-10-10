@@ -1,3 +1,5 @@
+import { useTheme } from './Mode';
+
 const people = [
   {
     name: 'Leslie Alexander',
@@ -38,15 +40,17 @@ const people = [
 ]
 
 export default function Team() {
+  const theme = useTheme();
+
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className={`${theme.background} py-24 sm:py-32`}>
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">
+          <h2 className={`text-3xl font-semibold tracking-tight text-pretty ${theme.text} sm:text-4xl`}>
             Meet our leadership
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-400">
-            We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
+          <p className={`mt-6 text-lg/8 ${theme.textSecondary}`}>
+            We're a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
             best results for our clients.
           </p>
         </div>
@@ -60,8 +64,8 @@ export default function Team() {
                   className="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10"
                 />
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
-                  <p className="text-sm/6 font-semibold text-indigo-400">{person.role}</p>
+                  <h3 className={`text-base/7 font-semibold tracking-tight ${theme.text}`}>{person.name}</h3>
+                  <p className={`text-sm/6 font-semibold ${theme.link}`}>{person.role}</p>
                 </div>
               </div>
             </li>
