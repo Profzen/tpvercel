@@ -1,5 +1,5 @@
 import Contact from "./components/Contact"
-import Footer from "./components/footer"
+import Footer from "./components/Footer"
 import {Mode} from "./components/Mode"
 import Navbar from "./components/Navbar"
 import Newsletter from "./components/Newsletter"
