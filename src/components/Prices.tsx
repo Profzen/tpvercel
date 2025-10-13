@@ -6,7 +6,7 @@ const tiers = [
     name: 'Hobby',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '$39',
+    priceMonthly: '$29',
     description: "The perfect plan if you're just getting started with our product.",
     features: ['25 products', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
     featured: false,
@@ -15,7 +15,7 @@ const tiers = [
     name: 'Enterprise',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '$109',
+    priceMonthly: '$99',
     description: 'Dedicated support and infrastructure for your company.',
     features: [
       'Unlimited products',
@@ -62,47 +62,56 @@ export default function Prices() {
           <div
             key={tier.id}
             className={classNames(
-              tier.featured ? `relative ${theme.card}` : `${theme.backgroundAlt}`,
+              tier.featured 
+                ? `relative ${theme.isDark ? 'bg-gray-800' : 'bg-gray-900'} shadow-xl` 
+                : `${theme.isDark ? 'bg-white/2.5' : 'bg-white'} shadow-md`,
               tier.featured
-                ? ''
-                : tierIdx === 0
-                  ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
-                  : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
-              `rounded-3xl p-8 ring-1 ${theme.ring} sm:p-10`,
+                ? 'ring-2 ring-indigo-500'
+                : `ring-1 ${theme.isDark ? 'ring-white/10' : 'ring-gray-200'}`,
+              tierIdx === 0
+                ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
+                : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
+              'rounded-3xl p-8 sm:p-10',
             )}
           >
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? theme.link : theme.link, 'text-base/7 font-semibold')}
+              className={classNames(
+                tier.featured ? 'text-indigo-400' : theme.text,
+                'text-base/7 font-semibold'
+              )}
             >
               {tier.name}
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span
                 className={classNames(
-                  tier.featured ? theme.text : theme.text,
+                  tier.featured ? 'text-white' : theme.text,
                   'text-5xl font-semibold tracking-tight',
                 )}
               >
                 {tier.priceMonthly}
               </span>
-              <span className={classNames(tier.featured ? theme.textSecondary : theme.textSecondary, 'text-base')}>/month</span>
+              <span className={tier.featured ? 'text-gray-400' : theme.textSecondary}>/month</span>
             </p>
-            <p className={classNames(tier.featured ? theme.textSecondary : theme.textSecondary, 'mt-6 text-base/7')}>
+            <p className={classNames('mt-6 text-base/7', tier.featured ? 'text-gray-300' : theme.textSecondary)}>
               {tier.description}
             </p>
             <ul
               role="list"
               className={classNames(
-                tier.featured ? theme.textSecondary : theme.textSecondary,
                 'mt-8 space-y-3 text-sm/6 sm:mt-10',
+                tier.featured ? 'text-gray-300' : theme.textSecondary
               )}
             >
               {tier.features.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
                   <CheckIcon
                     aria-hidden="true"
-                    className={classNames(tier.featured ? theme.link : theme.link, 'h-6 w-5 flex-none')}
+                    className={classNames(
+                      tier.featured ? 'text-indigo-400' : theme.link,
+                      'h-6 w-5 flex-none'
+                    )}
                   />
                   {feature}
                 </li>
@@ -113,9 +122,9 @@ export default function Prices() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? `${theme.button.primary} focus-visible:outline-indigo-500`
-                  : `${theme.button.secondary} text-white inset-ring inset-ring-white/5 focus-visible:outline-white/75`,
-                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
+                  ? 'bg-indigo-500 text-white hover:bg-indigo-400 focus-visible:outline-indigo-500'
+                  : `${theme.isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-800 text-white hover:bg-gray-700'} focus-visible:outline-gray-800`,
+                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 transition-colors duration-200',
               )}
             >
               Get started today
