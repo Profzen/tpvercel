@@ -10,11 +10,11 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            Tailwind CSS
+            DataCorp
           </h3>
           <p className={`text-sm ${theme.textSecondary}`}>
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+            We provide enriched data solutions for digital businesses. 
+            Our intuitive platform enables you to optimize performance
           </p>
         </div>
 

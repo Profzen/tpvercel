@@ -11,8 +11,8 @@ export default function Newsletter() {
           <div className="max-w-xl lg:max-w-lg">
             <h2 className={`text-4xl font-semibold tracking-tight ${theme.text}`}>Subscribe to our newsletter</h2>
             <p className={`mt-4 text-lg ${theme.textSecondary}`}>
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
+               Stay ahead of the curve with expert tips, and the latest trends in data analytics. 
+               Join thousands of businesses leveraging data for growth.
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -42,7 +42,7 @@ export default function Newsletter() {
               </div>
               <dt className={`mt-4 text-base font-semibold ${theme.text}`}>Weekly articles</dt>
               <dd className={`mt-2 text-base/7 ${theme.textSecondary}`}>
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                Receive our weekly articles on growth strategies, and industry best practices delivered straight to your inbox.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -51,7 +51,7 @@ export default function Newsletter() {
               </div>
               <dt className={`mt-4 text-base font-semibold ${theme.text}`}>No spam</dt>
               <dd className={`mt-2 text-base/7 ${theme.textSecondary}`}>
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
+                We respect your privacy. Your information stays confidential.
               </dd>
             </div>
           </dl>
