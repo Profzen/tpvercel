@@ -10,11 +10,10 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            DataCorp
+            lablab
           </h3>
           <p className={`text-sm ${theme.textSecondary}`}>
-            We provide enriched data solutions for digital businesses. 
-            Our intuitive platform enables you to optimize performance
+            we are all in one lab solution
           </p>
         </div>
 
@@ -40,7 +39,7 @@ function Footer() {
             </li>
             <li>
               <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
-                Company
+                startup
               </a>
             </li>
           </ul>
@@ -48,7 +47,7 @@ function Footer() {
 
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            Contact
+            Contact us
           </h3>
           <ul className="space-y-2 text-sm">
             <li className={theme.textSecondary}>Lomé, Togo</li>
@@ -61,7 +60,7 @@ function Footer() {
       <div
         className={`border-t ${theme.border} mt-10 pt-4 text-center text-sm ${theme.textSecondary}`}
       >
-        © 2025 Footer. All rights reserved.
+        © 2025 Footer. All rights reserved by us.
       </div>
     </footer>
   );
