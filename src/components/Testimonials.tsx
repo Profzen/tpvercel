@@ -16,8 +16,8 @@ export default function Testimonials() {
         <figure className="mt-10">
           <blockquote className={`text-center text-xl/8 font-semibold ${theme.text} sm:text-2xl/9`}>
             <p>
-              "Partnering with DataCorp completely transformed our approach to data. Their insights helped us optimize our online strategy, 
-              increase conversions, and truly understand our customers. It's not just data, it's growth."
+              "Collaborer avec Profzen a complètement transformé notre approche des données. Leurs analyses nous ont aidés à optimiser notre stratégie en ligne, 
+              augmenter nos conversions et vraiment comprendre nos clients. Ce n'est pas seulement des données, c'est de la croissance."
             </p>
           </blockquote>
           <figcaption className="mt-10">
@@ -27,11 +27,11 @@ export default function Testimonials() {
               className="mx-auto size-10 rounded-full"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className={`font-semibold ${theme.text}`}>Judith Black</div>
+              <div className={`font-semibold ${theme.text}`}>Marie Laval</div>
               <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className={`fill-${theme.text.split('-')[1]}`}>
                 <circle r={1} cx={1} cy={1} />
               </svg>
-              <div className={theme.textSecondary}>CEO of Workcation</div>
+              <div className={theme.textSecondary}>PDG de Workcation</div>
             </div>
           </figcaption>
         </figure>

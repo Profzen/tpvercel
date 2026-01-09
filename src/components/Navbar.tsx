@@ -4,10 +4,10 @@ import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from '@heroicons/react/24/out
 import { useTheme } from './Mode'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Produits', href: '#' },
+  { name: 'Fonctionnalités', href: '#' },
+  { name: 'Marché', href: '#' },
+  { name: 'Entreprise', href: '#' },
 ]
 
 const Navbar = () => {
@@ -21,12 +21,12 @@ const Navbar = () => {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Profzen</span>
               <img
                 alt=""
                 src={isDark 
-                  ? "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  : "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  ? "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=emerald&shade=500"
+                  : "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=emerald&shade=600"
                 }
                 className="h-8 w-auto"
               />
@@ -75,7 +75,7 @@ const Navbar = () => {
               )}
             </button>
             <a href="#" className={`text-sm/6 font-semibold ${theme.text}`}>
-              Log in <span aria-hidden="true">&rarr;</span>
+              Connexion <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -84,12 +84,12 @@ const Navbar = () => {
           <DialogPanel className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto ${theme.mobileMenu} p-6 sm:max-w-sm sm:ring-1 ${theme.ring}`}>
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Profzen</span>
                 <img
                   alt=""
                   src={isDark 
-                    ? "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                    : "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                    ? "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=emerald&shade=500"
+                    : "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=emerald&shade=600"
                   }
                   className="h-8 w-auto"
                 />
@@ -121,7 +121,7 @@ const Navbar = () => {
                     href="#"
                     className={`-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold ${theme.text} ${theme.hover}`}
                   >
-                    Log in
+                    Connexion
                   </a>
                 </div>
               </div>
@@ -146,30 +146,30 @@ const Navbar = () => {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className={`relative rounded-full px-3 py-1 text-sm/6 ${theme.textSecondary} ring-1 ${theme.ring}`}>
-              Announcing our next round of funding.{' '}
+              Annonce de notre prochaine levée de fonds.{' '}
               <a href="#" className={`font-semibold ${theme.link}`}>
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                En savoir plus <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className={`text-5xl font-semibold tracking-tight text-balance ${theme.text} sm:text-7xl`}>
-              Data to enrich your online business
+              Des données pour enrichir votre activité en ligne
             </h1>
             <p className={`mt-8 text-lg font-medium text-pretty ${theme.textSecondary} sm:text-xl/8`}>
-              Transform raw data into strategic insights. Our platform helps you collect, analyze, and leverage your 
-              data to drive online growth and make smarter business decisions.
+              Transformez vos données brutes en analyses stratégiques. Notre plateforme vous aide à collecter, analyser et exploiter vos 
+              données pour stimuler la croissance en ligne et prendre des décisions commerciales plus intelligentes.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className={`rounded-md ${theme.button.primary} px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500`}
+                className={`rounded-md ${theme.button.primary} px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500`}
               >
-                Get started
+                Commencer
               </a>
               <a href="#" className={`text-sm/6 font-semibold ${theme.text}`}>
-                Learn more <span aria-hidden="true">→</span>
+                En savoir plus <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

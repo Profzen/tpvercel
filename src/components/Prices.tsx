@@ -3,27 +3,27 @@ import { useTheme } from './Mode';
 
 const tiers = [
   {
-    name: 'Hobby',
+    name: 'Loisir',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '$29',
-    description: "The perfect plan if you're just getting started with our product.",
-    features: ['25 products', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
+    priceMonthly: '29€',
+    description: "Le plan parfait si vous débutez avec notre produit.",
+    features: ['25 produits', 'Jusqu\'\u00e0 10 000 abonnés', 'Analyses avancées', 'Réponse au support en 24h'],
     featured: false,
   },
   {
-    name: 'Enterprise',
+    name: 'Entreprise',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '$99',
-    description: 'Dedicated support and infrastructure for your company.',
+    priceMonthly: '99€',
+    description: 'Support et infrastructure dédiés pour votre entreprise.',
     features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      'Dedicated support representative',
-      'Marketing automations',
-      'Custom integrations',
+      'Produits illimités',
+      'Abonnés illimités',
+      'Analyses avancées',
+      'Représentant de support dédié',
+      'Automatisations marketing',
+      'Intégrations personnalisées',
     ],
     featured: true,
   },
@@ -48,14 +48,13 @@ export default function Prices() {
         />
       </div>
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className={`text-base/7 font-semibold ${theme.link}`}>Pricing</h2>
+        <h2 className={`text-base/7 font-semibold ${theme.link}`}>Tarifs</h2>
         <p className={`mt-2 text-5xl font-semibold tracking-tight text-balance ${theme.text} sm:text-6xl`}>
-          Choose the right plan for you
+          Choisissez le plan qui vous convient
         </p>
       </div>
       <p className={`mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty ${theme.textSecondary} sm:text-xl/8`}>
-        Choose an affordable plan that's packed with the best features for engaging your audience, creating customer
-        loyalty, and driving sales.
+        Choisissez un plan abordable qui regorge des meilleures fonctionnalités pour engager votre audience, créer la fidélité client et stimuler les ventes.
       </p>
       <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
         {tiers.map((tier, tierIdx) => (
@@ -66,7 +65,7 @@ export default function Prices() {
                 ? `relative ${theme.isDark ? 'bg-gray-800' : 'bg-gray-900'} shadow-xl` 
                 : `${theme.isDark ? 'bg-white/2.5' : 'bg-white'} shadow-md`,
               tier.featured
-                ? 'ring-2 ring-indigo-500'
+                ? 'ring-2 ring-emerald-500'
                 : `ring-1 ${theme.isDark ? 'ring-white/10' : 'ring-gray-200'}`,
               tierIdx === 0
                 ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
@@ -92,7 +91,7 @@ export default function Prices() {
               >
                 {tier.priceMonthly}
               </span>
-              <span className={tier.featured ? 'text-gray-400' : theme.textSecondary}>/month</span>
+              <span className={tier.featured ? 'text-gray-400' : theme.textSecondary}>/mois</span>
             </p>
             <p className={classNames('mt-6 text-base/7', tier.featured ? 'text-gray-300' : theme.textSecondary)}>
               {tier.description}
@@ -122,12 +121,12 @@ export default function Prices() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-indigo-500 text-white hover:bg-indigo-400 focus-visible:outline-indigo-500'
+                  ? 'bg-emerald-500 text-white hover:bg-emerald-400 focus-visible:outline-emerald-500'
                   : `${theme.isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-800 text-white hover:bg-gray-700'} focus-visible:outline-gray-800`,
                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 transition-colors duration-200',
               )}
             >
-              Get started today
+              Commencer aujourd'hui
             </a>
           </div>
         ))}

@@ -2,38 +2,38 @@ import { useTheme } from './Mode';
 
 const people = [
   {
-    name: 'Leslie Alexander',
-    role: 'CEO',
+    name: 'Sophie Durand',
+    role: 'Directrice Générale',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'Michael Foster',
-    role: 'Data analyst / CTO',
+    name: 'Marc Lefebvre',
+    role: 'Analyste de données / CTO',
     imageUrl:
       'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'Gareth Bale',
-    role: 'Business Relations',
+    name: 'Pierre Martin',
+    role: 'Relations Commerciales',
     imageUrl:
       'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: "Lindsay  O'Brien",
-    role: 'Front-end Developer',
+    name: "Amélie Bernard",
+    role: 'Développeuse Front-end',
     imageUrl:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'Courtney Henry',
+    name: 'Claire Rousseau',
     role: 'Designer',
     imageUrl:
       'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'Tom Cook',
-    role: 'Director of Product',
+    name: 'Thomas Dubois',
+    role: 'Directeur Produit',
     imageUrl:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
@@ -47,11 +47,11 @@ export default function Team() {
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
           <h2 className={`text-3xl font-semibold tracking-tight text-pretty ${theme.text} sm:text-4xl`}>
-            Meet our leadership
+            Rencontrez notre équipe dirigeante
           </h2>
           <p className={`mt-6 text-lg/8 ${theme.textSecondary}`}>
-            We're a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients.
+            Nous sommes un groupe dynamique de personnes passionnées par ce que nous faisons et dédiées à offrir les
+            meilleurs résultats pour nos clients.
           </p>
         </div>
         <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">

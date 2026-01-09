@@ -10,36 +10,36 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            lablab
+            Profzen
           </h3>
           <p className={`text-sm ${theme.textSecondary}`}>
-            we are all in one lab solution
+            Nous sommes votre solution complète pour laboratoire
           </p>
         </div>
 
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            Useful links
+            Liens utiles
           </h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
-                Product
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                Produit
               </a>
             </li>
             <li>
-              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
-                Features
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                Fonctionnalités
               </a>
             </li>
             <li>
-              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
-                Marketplace
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                Marché
               </a>
             </li>
             <li>
-              <a href="#" className={`transition ${theme.isDark ? 'hover:text-indigo-400' : 'hover:text-indigo-600'}`}>
-                startup
+              <a href="#" className={`transition ${theme.isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                Startup
               </a>
             </li>
           </ul>
@@ -47,12 +47,12 @@ function Footer() {
 
         <div>
           <h3 className={`${theme.text} text-lg font-semibold mb-4`}>
-            Contact us
+            Contactez-nous
           </h3>
           <ul className="space-y-2 text-sm">
             <li className={theme.textSecondary}>Lomé, Togo</li>
-            <li className={theme.textSecondary}>Email : contact@contact.tg</li>
-            <li className={theme.textSecondary}>Phone : +228 XX XX XX XX</li>
+            <li className={theme.textSecondary}>Email : contact@profzen.tg</li>
+            <li className={theme.textSecondary}>Téléphone : +228 XX XX XX XX</li>
           </ul>
         </div>
       </div>
@@ -60,7 +60,7 @@ function Footer() {
       <div
         className={`border-t ${theme.border} mt-10 pt-4 text-center text-sm ${theme.textSecondary}`}
       >
-        © 2025 Footer. All rights reserved by us.
+        © 2025-2026 Profzen. Tous droits réservés.
       </div>
     </footer>
   );

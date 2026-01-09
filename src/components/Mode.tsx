@@ -48,19 +48,19 @@ export const Mode: React.FC<ModeProps> = ({ children }) => {
     textButton: isDark ? 'text-gray-200' : 'text-gray-600',
     border: isDark ? 'border-white/10' : 'border-gray-200',
     hover: isDark ? 'hover:bg-white/5' : 'hover:bg-gray-100',
-    gradient: isDark ? 'from-pink-400 to-purple-500' : 'from-amber-400 to-blue-500',
+    gradient: isDark ? 'from-emerald-400 to-teal-500' : 'from-amber-400 to-yellow-500',
     card: isDark ? 'bg-gray-800' : 'bg-white',
     cardBorder: isDark ? 'border-gray-700' : 'border-gray-200',
     input: {
       bg: isDark ? 'bg-white/5' : 'bg-white',
       border: isDark ? 'outline-white/10' : 'outline-gray-300',
-      focus: isDark ? 'focus:outline-indigo-500' : 'focus:outline-indigo-600',
+      focus: isDark ? 'focus:outline-emerald-500' : 'focus:outline-emerald-600',
     },
     button: {
-      primary: isDark ? 'bg-indigo-500 hover:bg-indigo-400' : 'bg-indigo-600 hover:bg-indigo-500',
+      primary: isDark ? 'bg-emerald-500 hover:bg-emerald-400' : 'bg-emerald-600 hover:bg-emerald-500',
       secondary: isDark ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300',
     },
-    link: isDark ? 'text-indigo-400' : 'text-indigo-600',
+    link: isDark ? 'text-emerald-400' : 'text-emerald-600',
     ring: isDark ? 'ring-white/10' : 'ring-gray-900/10',
     mobileMenu: isDark ? 'bg-gray-900' : 'bg-white',
   };
